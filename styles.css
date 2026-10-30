@@ -81,7 +81,7 @@ body.leaving .page{opacity:0;transform:translateY(-8px);transition:opacity .25s,
 .hr{position:relative;display:grid;place-items:center;padding:40px 0}
 .hero{overflow-x:clip}
 .disc{position:relative;width:min(100%,460px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#2f5a84,var(--navy) 70%);display:grid;place-items:center;box-shadow:0 50px 80px -40px rgba(31,60,91,.7);animation:pin 1s .1s var(--ease) both;overflow:visible}
-.spine{height:84%;width:auto;overflow:visible}
+.spine{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);height:84%;width:auto;overflow:visible}
 .vb{fill:var(--aqua);transform-box:fill-box;transform-origin:center;animation:align 1.6s var(--ease) both,breathe 5s ease-in-out infinite;animation-delay:calc(var(--i)*45ms + .3s),calc(var(--i)*120ms + 2.2s)}
 .vb:nth-child(odd){fill:#bfe6e3}
 @keyframes align{0%{opacity:0;translate:calc((var(--i) - 11)*3px + 30px) 0;rotate:25deg}60%{opacity:1}100%{opacity:1;translate:0 0;rotate:0deg}}
